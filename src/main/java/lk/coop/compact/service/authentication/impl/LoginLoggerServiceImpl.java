@@ -10,6 +10,7 @@ import lk.coop.compact.entity.authentication.Role;
 import lk.coop.compact.entity.authentication.User;
 import lk.coop.compact.repository.authentication.LoginLoggerRepository;
 import lk.coop.compact.repository.authentication.UserRepository;
+import lk.coop.compact.service.authentication.LoginLoggerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

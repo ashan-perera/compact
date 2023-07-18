@@ -7,6 +7,7 @@ import lk.coop.compact.dto.authentication.response.UserResponse;
 import lk.coop.compact.entity.authentication.Role;
 import lk.coop.compact.entity.authentication.User;
 import lk.coop.compact.repository.authentication.UserRepository;
+import lk.coop.compact.service.authentication.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

@@ -2,7 +2,7 @@ package lk.coop.compact.controller.authentication;
 
 import lk.coop.compact.dto.authentication.request.RoleSaveRequest;
 import lk.coop.compact.dto.authentication.response.RoleResponse;
-import lk.coop.compact.service.authentication.impl.RoleService;
+import lk.coop.compact.service.authentication.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

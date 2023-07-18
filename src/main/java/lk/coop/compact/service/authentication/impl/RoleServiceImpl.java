@@ -4,6 +4,7 @@ import lk.coop.compact.dto.authentication.request.RoleSaveRequest;
 import lk.coop.compact.dto.authentication.response.RoleResponse;
 import lk.coop.compact.entity.authentication.Role;
 import lk.coop.compact.repository.authentication.RoleRepository;
+import lk.coop.compact.service.authentication.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

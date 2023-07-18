@@ -1,4 +1,4 @@
-package lk.coop.compact.service.authentication.impl;
+package lk.coop.compact.service.authentication;
 
 import lk.coop.compact.dto.authentication.request.RoleSaveRequest;
 import lk.coop.compact.dto.authentication.response.RoleResponse;
