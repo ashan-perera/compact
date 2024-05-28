@@ -46,4 +46,11 @@ public class StudentController {
 
     }
 
+    @GetMapping("/jenkins")
+    public String jenkins() {
+
+        return "Welcome to Jenkins";
+
+    }
+
 }

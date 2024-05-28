@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="covernote" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="592" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" whenResourceMissingType="Empty" uuid="45d90c46-0d3e-4246-a50d-7be115bb4219">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="covernoteNo" class="java.lang.String"/>
+	<parameter name="covernoteDate" class="java.lang.String"/>
+	<parameter name="noOfDays" class="java.lang.Integer"/>
+	<parameter name="policyNo" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="insuredName" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="totalFee" class="java.lang.String"/>
+	<parameter name="reasonName" class="java.lang.String"/>
+	<parameter name="vehicleNo" class="java.lang.String"/>
+	<parameter name="chassisNo" class="java.lang.String"/>
+	<parameter name="engineNo" class="java.lang.String"/>
+	<parameter name="vehiMake" class="java.lang.String"/>
+	<parameter name="vehiModel" class="java.lang.String"/>
+	<parameter name="productOfInsurance" class="java.lang.String"/>
+	<parameter name="insuranceClass" class="java.lang.String"/>
+	<parameter name="policyEffectiveDate" class="java.lang.String"/>
+	<parameter name="policySumInsured" class="java.lang.String"/>
+	<parameter name="policyTotalPremium" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="710" splitType="Stretch">
+			<staticText>
+				<reportElement x="155" y="50" width="271" height="20" uuid="d97017ea-99ee-49b4-8720-b1103599f66b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEMPORARY COVER NOTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="81" width="120" height="20" uuid="0c1e5b4a-d69f-4d9e-b4cc-60cf7c064839"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cover Note No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="81" width="20" height="20" uuid="bf86a8d1-9877-4505-a6f9-da21f92f232f"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="103" width="120" height="20" uuid="38fd634f-2e54-439d-8a0a-6e4f49507c07"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cover Note Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="103" width="20" height="20" uuid="3544b76f-99b7-43c5-b77f-82eb3a43a049"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="125" width="140" height="20" uuid="52e35dd7-e9fe-4756-aefc-87fed3d19969"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No of Days[Valid]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="125" width="20" height="20" uuid="9e0bc620-3296-4ee1-88eb-7e5f86a6cca6"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="148" width="140" height="20" uuid="2f74c92d-1d01-49a1-bbf9-dc5c1bddc4c7"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Policy No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="148" width="20" height="20" uuid="948c2acf-fbd1-4cf2-b320-dc9e8fce4b6b"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="171" width="140" height="20" uuid="74d02ec2-9757-4c95-97a8-29fd3abbdc0c"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="171" width="20" height="20" uuid="346cf65f-4856-474f-8d1c-8fa830177866"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="193" width="140" height="20" uuid="b83b5be3-b3e5-4e6c-8558-33843581c9be"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Insured Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="193" width="20" height="20" uuid="4f22fa71-ee65-4baf-a923-09314d870279"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="215" width="140" height="20" uuid="26a7273a-8e8a-4480-b88e-2ead29b01d3f"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="215" width="20" height="20" uuid="f5111de2-e081-4c6e-83c9-5ade86efff33"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="29" y="241" width="540" height="90" uuid="360fc06a-6333-496a-9840-b1778ab611eb"/>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Having proposed for insurance in respect of the Motor Vehicle described in the Schedule below and have to be paid the sum of Sri Lankan Rupees "+$P{totalFee}+". The riskhereby held covered in terms of the company's usual form of Third Party policy applicable thereto for a period of "+$P{noOfDays}+" days this to say from "+$P{policyEffectiveDate}+" to the same time on the "+$P{noOfDays}+" day thereafter unless the cover be terminated by the Company by notice in writing in which case Insurance will thereupon cease and a proportionate part of the annual premium otherwise payable for such Insurance will be charged for the time the company has been on risk."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="337" width="140" height="20" uuid="06600872-6b74-4226-8d43-bdc68ab6cde4"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class of Insurance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="337" width="20" height="20" uuid="081c17ba-d6aa-41a0-844b-423494a06575"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="358" width="140" height="20" uuid="41936db2-d1a2-4a8c-8704-61de015f8843"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product of Insurance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="358" width="20" height="20" uuid="5404950b-0b2a-4502-9d67-a0d6f21c893a"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="380" width="140" height="20" uuid="aa54835f-8908-4010-b66a-c032d62b8445"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vehicle Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="380" width="20" height="20" uuid="06b4fa88-c4b6-4225-81be-1a34e4be5b3b"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="426" width="140" height="20" uuid="48043d8a-2282-4050-90c9-5cad81a5814a"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Premium]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="426" width="20" height="20" uuid="7bef8e09-e850-4adb-85a8-ac5dba66f03e"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="403" width="140" height="20" uuid="056536b4-af3a-4e5a-8c59-feb23409de82"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Sum Insured]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="403" width="20" height="20" uuid="2f2cacc4-aa3d-4dc6-8f5a-32bc88883c71"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="456" width="140" height="20" uuid="1ff76d29-cee9-4141-bb88-9e41fb9af823"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chassis No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="456" width="20" height="20" uuid="9a0645c2-d7d2-42a9-af5f-93125368f012"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="478" width="140" height="20" uuid="c7dcbafd-105c-42d9-bfcb-83ddb1e0816e"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Engine No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="478" width="20" height="20" uuid="9263847f-ac90-4f7a-81c4-b0684486723c"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="500" width="140" height="20" uuid="6926c2c2-7e49-43bd-bfef-4481e98e936b"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Make & Model]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="500" width="20" height="20" uuid="431997a8-1a06-4039-86b6-73e0f31a5186"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="522" width="140" height="20" uuid="04dabb49-5532-4551-8eee-95ea94378631"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Model]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="522" width="20" height="20" uuid="f084a13d-364e-476f-8f39-dea68f9f8ea3"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="549" width="140" height="20" uuid="69a337b6-6a8d-4d3c-b047-0e90ff07fc48"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cover Note Reason]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="549" width="20" height="20" uuid="38ff4940-44d1-40f1-80dd-479130aeb8b1"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="573" width="550" height="40" uuid="9cf3fff2-86b3-402f-8e2a-f360acd23b85"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[We hereby certify that this Cover Note is issued in accordance with the provisions of Part VI of the Motor
+Traffic Act. No. 14 of 1951.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="634" width="260" height="20" uuid="310c524a-4a07-4da4-b010-86eb915eacc7"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CO-OPERATIVE INSURANCE COMPANY LIMITED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="613" width="260" height="20" uuid="f97dd2df-d69e-4529-a8c7-d267df2bf3c0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Authorised Signature on behalf of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="670" width="180" height="20" uuid="3d7fbc5a-9e4a-4506-a49e-fe18302930a2"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[...........................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="690" width="150" height="20" uuid="d0f9b2a7-4945-43b8-8dc0-206f592894d8"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Courier New" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Manager - Motor Insurance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="670" width="180" height="20" uuid="3b703419-c365-4b68-ab1e-ca01f1dac77c"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[...........................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="690" width="150" height="20" uuid="ba803229-64aa-4072-81fd-8cba79793642"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Courier New" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="209" y="81" width="358" height="20" uuid="0b8076fa-c29e-42c1-bf6c-4bc9b8c233fe"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{covernoteNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="103" width="358" height="20" uuid="c038722d-6fc3-4a03-968d-753f2d155b45"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{covernoteDate}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="250" y="0" width="50" height="50" uuid="a4caf200-dd5b-4629-8c74-aabea7d59c0d"/>
+				<imageExpression><![CDATA["C://Users/Yashen Raveesha/cover/coop.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="209" y="123" width="180" height="20" uuid="a5e5c3b8-ae0d-44e0-9be9-b4629ea95b19"/>
+				<textFieldExpression><![CDATA[$P{noOfDays}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="145" width="180" height="15" uuid="82b483fd-8af5-460d-a096-88f01ef1ddd1"/>
+				<textFieldExpression><![CDATA[$P{policyNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="168" width="180" height="21" uuid="a5dbde87-4d79-48e5-ae85-1456beb99542"/>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="191" width="180" height="19" uuid="73587436-8fcf-40f1-baca-d496ae68f510"/>
+				<textFieldExpression><![CDATA[$P{insuredName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="215" width="358" height="20" uuid="00588ab7-8839-406c-ad99-611ddd2e313f"/>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="550" width="179" height="19" uuid="52748891-7f0e-4003-8a06-e0266826b962"/>
+				<textFieldExpression><![CDATA[$P{reasonName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="383" width="180" height="15" uuid="892e7a61-5f6e-40e1-82f5-466139ea71c6"/>
+				<textFieldExpression><![CDATA[$P{vehicleNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="456" width="180" height="20" uuid="92d2d946-d9c8-46fa-ad4a-f242f34db64e"/>
+				<textFieldExpression><![CDATA[$P{chassisNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="476" width="180" height="24" uuid="6f401d7e-0cd5-4430-90f4-89fcc9df538a"/>
+				<textFieldExpression><![CDATA[$P{engineNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="500" width="180" height="22" uuid="52ea4279-9c4e-4d3e-8976-1e1d977a0246"/>
+				<textFieldExpression><![CDATA[$P{vehiMake}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="521" width="180" height="23" uuid="bd33525a-f803-4cab-b06d-963f76dd04c8"/>
+				<textFieldExpression><![CDATA[$P{vehiModel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="358" width="180" height="21" uuid="5bcb3ba8-bbde-4679-9ff4-e9bd87751fc3"/>
+				<textFieldExpression><![CDATA[$P{productOfInsurance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="337" width="180" height="13" uuid="140e1fd0-d5ec-4542-985a-069d93e731e6"/>
+				<textFieldExpression><![CDATA[$P{insuranceClass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="403" width="180" height="20" uuid="7e3e84e3-d7d0-45d0-845e-3c0f665c1987"/>
+				<textFieldExpression><![CDATA[$P{policySumInsured}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="426" width="180" height="21" uuid="1f13e1b1-fc1b-4989-ad5a-919d9954f727"/>
+				<textFieldExpression><![CDATA[$P{policyTotalPremium}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnFooter>
+		<band height="60">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="ContainerHeight" x="105" y="0" width="400" height="60" uuid="6fced631-fec3-4126-8878-b12cb60813e5"/>
+				<imageExpression><![CDATA["C://Users/Yashen Raveesha/cover/mt_address.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</columnFooter>
+</jasperReport>

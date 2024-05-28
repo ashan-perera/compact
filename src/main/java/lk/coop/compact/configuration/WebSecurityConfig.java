@@ -43,6 +43,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers(
                         "/v2/api-docs",
+                        "/student/report/{format}",
+                        "/student/printCovernote",
+                        "/student/jenkins",
                         "/configuration/**",
                         "/swagger*/**",
                         "/webjars/**",

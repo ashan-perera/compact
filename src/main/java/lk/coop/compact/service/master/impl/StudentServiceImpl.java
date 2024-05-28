@@ -142,7 +142,9 @@ public class StudentServiceImpl implements StudentService {
 
         try {
 
-            File file = new File(System.getProperty("user.home") + "\\JasperTemp\\covernote.jrxml");
+//            File file = new File(System.getProperty("user.home") + "\\JasperTemp\\covernote.jrxml");
+
+            File file = ResourceUtils.getFile("classpath:covernote.jrxml");
 
             HashMap map = new HashMap<String, String>();
 
